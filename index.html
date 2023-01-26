@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- External styles -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Homepage | Dr Simba</title>
+  </head>
+  <body>
+    <header>
+      <nav class="py-3 navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Dr Simba</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Dr Simba
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Products
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Product 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Product 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Product 3</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <button class="btn btn-primary" type="submit">Register</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="banner-container">
+        <video
+          id="backgroundVideo"
+          autoplay
+          loop
+          muted
+          poster="img/Plasma-Particle-Physics-Art-Concept.jpg"
+        >
+          <source src="videos/video2.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="text-center banner-description d-flex justify-content-center align-items-center flex-column container"
+        >
+          <h2 class="hero-title text-light">Medics</h2>
+          <p class="hero-text text-light">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            tempore cum nihil aliquam repellendus mollitia libero iste explicabo
+            accusantium, pariatur ipsam officia voluptate eaque fuga magnam,
+            doloremque itaque fugiat recusandae hic.
+          </p>
+          <a href="register.php" class="btn btn-primary">Become a member</a>
+        </div>
+        <span class="video-container" title="Play / Pause"
+          ><i class="fa fa-pause text-light mx-2" id="videoIcon"></i
+        ></span>
+      </div>
+
+      <!-- Main Content Section -->
+      <div class="container text-center py-3">
+        <div class="row g-2">
+          <div class="col-sm-6">
+            <div class="p-3">
+              <h4>Header 1</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ducimus ut quae ad. Numquam dolor earum, vitae porro atque ullam
+                temporibus incidunt ipsum molestias molestiae. Enim atque
+                molestiae quos ducimus neque?
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="p-3">
+              <img
+                class="img-fluid"
+                src="img/student-in-the-classroom.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-sm-6">
+            <div class="p-3">
+              <img
+                class="img-fluid"
+                src="img/Plasma-Particle-Physics-Art-Concept.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="p-3">
+              <h3>Header 2</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
+                commodi aliquid repellat quas necessitatibus, possimus nihil
+                soluta sapiente expedita rem id sint eligendi, eum deleniti est
+                quaerat laboriosam earum quasi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright: Dr Simba Website
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body::before {
+    display: block;
+    content: "";
+    height: 24px;
+}
+
+/* Hero section */
+.banner-container {
+    display: grid;
+    place-items: center;
+}
+
+#backgroundVideo {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 15px;
+  z-index: -1;
+}
+
+.banner-description {
+    position: absolute;
+    top: 100px;
+}
+
+.hero-title {
+    font-size: 2rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+}
+
+/* MEDIA SCREENS */
+
+@media screen and (min-width: 576px) {
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+    body::before {
+        display: block;
+        content: "";
+        height: 48px;
+    }
+
+    #backgroundVideo {
+        width: 100vw;
+        height: 60vh;
+        object-fit: cover;
+        position: relative;
+        left: 0;
+        right: 0;
+        /* top: 15px; */
+        z-index: -1;
+    }
+}
