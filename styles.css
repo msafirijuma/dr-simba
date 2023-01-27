@@ -15,6 +15,7 @@ body::before {
 .banner-container {
     display: grid;
     place-items: center;
+    position: relative;
 }
 
 #backgroundVideo {
@@ -39,6 +40,12 @@ body::before {
 
 .hero-text {
     font-size: 1.2rem;
+}
+
+.video-container {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
 }
 
 /* MEDIA SCREENS */
